@@ -1,0 +1,161 @@
+/* General Reset & Fonts */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background-color: #f7f9fc;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: #0a2540;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar h2 {
+    font-size: 24px;
+}
+
+.navbar nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar nav a:hover {
+    color: #00aaff;
+}
+
+/* Hero / Home Page */
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 80px 60px;
+    gap: 60px;
+}
+
+.hero-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #0a2540;
+}
+
+.hero-text p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.hero-image img {
+    width: 260px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Section Content */
+.content {
+    padding: 60px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.content h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #0a2540;
+}
+
+.content p {
+    margin-bottom: 15px;
+}
+
+/* Projects */
+.project {
+    margin-bottom: 50px;
+}
+
+.project h2 {
+    margin-bottom: 10px;
+    color: #0a2540;
+}
+
+.project ul {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    list-style-type: disc;
+}
+
+/* Experience */
+.experience {
+    margin-bottom: 50px;
+}
+
+.experience h2 {
+    color: #0a2540;
+    margin-bottom: 10px;
+}
+
+.experience h3 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #0a2540;
+}
+
+.experience ul {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    list-style-type: disc;
+}
+
+/* Technical Skills */
+.skills ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.skills li {
+    margin-bottom: 10px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image img {
+        width: 200px;
+        margin-top: 20px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar nav {
+        margin-top: 10px;
+    }
+}

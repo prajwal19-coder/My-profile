@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prajwal P Vakkund | Portfolio</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        /* Basic layout for hero section */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 1rem 2rem;
+        }
+        .navbar h2 {
+            color: #fff;
+            margin: 0;
+        }
+        .navbar nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 1.5rem;
+        }
+        .navbar nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            padding: 3rem 2rem;
+            background-color: #f4f4f4;
+        }
+        .hero-text {
+            flex: 1 1 500px;
+            margin-right: 2rem;
+        }
+        .hero-text h1 {
+            margin-top: 0;
+        }
+        .hero-image {
+            flex: 1 1 300px;
+            text-align: center;
+        }
+        .hero-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .content {
+            padding: 2rem;
+        }
+        .content h1 {
+            margin-top: 0;
+        }
+        .content ul {
+            list-style-type: disc;
+            padding-left: 2rem;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+            .hero-text {
+                margin-right: 0;
+                margin-bottom: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<header class="navbar">
+    <h2>Prajwal P Vakkund</h2>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/projects">Projects</a>
+        <a href="/experience">Experience</a>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-text">
+        <h1>Professional Summary</h1>
+        <p>
+            Generative AI Engineer at Bosch Global Software Technologies with hands-on experience
+            designing and deploying end-to-end Generative AI solutions. Strong expertise in Large
+            Language Models (LLMs), Retrieval-Augmented Generation (RAG), prompt engineering, and
+            vector databases such as FAISS and Pinecone.
+        </p>
+        <p>
+            Experienced with GenAI frameworks including LangChain and LangGraph, API-based LLM
+            integration, and building scalable, production-ready AI applications. Skilled in ML
+            model deployment, workflow automation, and delivering efficient, high-impact
+            AI-driven solutions.
+        </p>
+    </div>
+
+    <div class="hero-image">
+        <img src="/images/profile1.jpg" alt="Prajwal Profile Photo">
+    </div>
+</section>
+
+<!-- Technical Skills Section -->
+<section class="content">
+    <h1>Technical Skills</h1>
+    <ul>
+        <li><strong>Programming Languages:</strong> Python, C, Java</li>
+        <li><strong>AI / ML:</strong> Machine Learning, Deep Learning fundamentals, Classification algorithms, Model evaluation</li>
+        <li><strong>Generative AI:</strong> Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), Agentic AI, Prompt Engineering</li>
+        <li><strong>Frameworks & Libraries:</strong> FastAPI, Flask, LangChain, LangGraph, Scikit-learn</li>
+        <li><strong>Models:</strong> GPT-4o, Gemini 1.5, Ollama, Hugging Face Transformer models</li>
+        <li><strong>Databases:</strong> Vector Databases: FAISS, ChromaDB</li>
+    </ul>
+</section>
+
+</body>
+</html>

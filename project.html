@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projects | Prajwal P Vakkund</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #0a2540;
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .navbar h2 {
+            color: #fff;
+            margin: 0;
+        }
+
+        .navbar nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 1.5rem;
+            font-weight: 500;
+        }
+
+        .navbar nav a:hover {
+            color: #00aaff;
+        }
+
+        /* Content Section */
+        .content {
+            padding: 2rem 3rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .content h1 {
+            color: #0a2540;
+            margin-bottom: 2rem;
+        }
+
+        .project {
+            margin-bottom: 2.5rem;
+        }
+
+        .project h2 {
+            color: #0a2540;
+            margin-bottom: 0.5rem;
+        }
+
+        .project ul {
+            margin-left: 1.5rem;
+            list-style-type: disc;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .content {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<header class="navbar">
+    <h2>Prajwal P Vakkund</h2>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/projects">Projects</a>
+        <a href="/experience">Experience</a>
+    </nav>
+</header>
+
+<!-- Projects Section -->
+<section class="content">
+    <h1>Projects</h1>
+
+    <div class="project">
+        <h2>Lane Detection & Steer Assist</h2>
+        <p><strong>Tech Stack:</strong> Python, OpenCV, Raspberry Pi</p>
+        <ul>
+            <li>Developed a driver-assist prototype for lane detection and steering estimation.</li>
+            <li>Implemented sliding window and curvature estimation with real-time simulation.</li>
+        </ul>
+    </div>
+
+    <div class="project">
+        <h2>Motion Control for Autonomous Vehicles</h2>
+        <p><strong>Tech Stack:</strong> Python, Raspberry Pi, Sensors, Motor Controllers</p>
+        <ul>
+            <li>Designed a lateral motion control system for a miniature autonomous vehicle.</li>
+            <li>Integrated visualization tools for real-time steering and motion analysis.</li>
+        </ul>
+    </div>
+</section>
+
+</body>
+</html>
